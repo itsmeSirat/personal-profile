@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SIRAT FATIMA | Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: lavenderblush;
+        color: darkslategray;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 40px 20px;
+    }
+
+    .page {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    h1, h2, h3 {
+        color: darkslategray;
+    }
+
+    h1, h2 {
+        font-family: Georgia, serif;
+    }
+
+    /* Header */
+
+    .hero {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid thistle;
+    }
+
+    .avatar img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: thistle;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: Georgia, serif;
+        font-size: 30px;
+        color: white;
+    }
+
+    .name {
+        font-size: 34px;
+        margin-bottom: 5px;
+    }
+
+    .role {
+        color: dimgray;
+        margin-bottom: 12px;
+    }
+
+    .tagline {
+        max-width: 600px;
+        font-size: 15px;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .contact-row a {
+        text-decoration: none;
+        color: darkslategray;
+        background-color: white;
+        border: 1px solid thistle;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+
+    .contact-row a:hover {
+        background-color: lavender;
+    }
+
+    /* Sections */
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .section-intro {
+        color: dimgray;
+        font-size: 13px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+
+    .about p {
+        max-width: 700px;
+        font-size: 15px;
+    }
+
+    /* Skills */
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .skill-card {
+        background-color: white;
+        border: 1px solid thistle;
+        border-radius: 12px;
+        padding: 18px;
+    }
+
+    .skill-card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .skill-card p {
+        color: dimgray;
+        font-size: 14px;
+    }
+
+    /* Education */
+
+    .education {
+        border-left: 3px solid thistle;
+        padding-left: 20px;
+    }
+
+    .education-item {
+        margin-bottom: 25px;
+    }
+
+    .education-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .education-item h3 {
+        font-size: 16px;
+    }
+
+    .education-item .date {
+        color: dimgray;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .education-item p {
+        font-size: 14px;
+    }
+
+    /* Projects */
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .project {
+        background-color: white;
+        border: 1px solid thistle;
+        border-radius: 12px;
+        padding: 18px;
+    }
+
+    .project h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .project p {
+        color: dimgray;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .technology {
+        display: inline-block;
+        background-color: lavender;
+        padding: 4px 8px;
+        border-radius: 8px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+        color: dimgray;
+        font-size: 13px;
+        border-top: 1px solid thistle;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 600px) {
+
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .contact-row {
+            justify-content: center;
+        }
+
+        .skills,
+        .projects {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</head><body><div class="page">
+
+    <!-- Introduction -->
+
+    <div class="hero">
+
+        <div class="avatar">
+            <img src="myphoto.jpg" alt=" my  pic ">
+        </div>
+
+        <div>
+            <h1 class="name">SIRAT FATIMA</h1>
+
+            <p class="role">
+                BCA Student | Aspiring Software Developer
+            </p>
+
+            <p class="tagline">
+                I'm learning web development and programming by building
+                small projects and experimenting with new things.
+            </p>
+
+            <div class="contact-row">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Jaipur, India</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- About -->
+
+    <section class="about">
+
+        <h2>About Me</h2>
+
+        <p class="section-intro">
+            A little bit about me
+        </p>
+
+        <p>
+            I'm a BCA student interested in programming and web development.
+            I have learned the basics of Java, C, HTML, CSS and JavaScript.
+            Right now, I'm focusing on improving my skills by creating
+            small projects and learning how real websites are built.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+
+    <section>
+
+        <h2>Skills</h2>
+
+        <p class="section-intro">
+            Technologies I'm currently learning
+        </p>
+
+        <div class="skills">
+
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>Programming fundamentals and basic problem solving.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>C</h3>
+                <p>Basic programming concepts and logic building.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>HTML & CSS</h3>
+                <p>Creating and styling basic web pages.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Learning the basics of making websites interactive.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+
+    <section>
+
+        <h2>Education</h2>
+
+        <p class="section-intro">
+            My academic background
+        </p>
+
+        <div class="education">
+
+            <div class="education-item">
+
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+
+                <p class="date">
+                    University of Rajasthan | 2025 - 2028
+                </p>
+
+                <p>
+                    Studying programming, computer fundamentals,
+                    web development and other areas of computer applications.
+                </p>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <h3>Senior Secondary (12th)</h3>
+
+                <p class="date">
+                    ST. Angela Sophia Sr. Sec. School | 2022
+                </p>
+
+                <p>
+                    Studied Science with biology.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section>
+
+        <h2>Projects</h2>
+
+        <p class="section-intro">
+            Things I've built while learning
+        </p>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>Personal Profile Page</h3>
+
+                <p>
+                    A simple personal webpage made while learning
+                    HTML and CSS.
+                </p>
+
+                <span class="technology">HTML</span>
+                <span class="technology">CSS</span>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Project Two</h3>
+
+                <p>
+                    Student Grade Manager
+                </p>
+
+                <span class="technology">Java</span>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Project Three</h3>
+
+                <p>
+                    Quiz Game
+                </p>
+
+                <span class="technology">JavaScript</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Made while learning and building.
+    </footer>
+
+</div>
+
+</body>
+</html>
